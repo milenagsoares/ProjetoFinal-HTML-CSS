@@ -67,7 +67,120 @@
   color: #ffd700;
 }
 
-body {
+/* body {
   background: url('img/back1.jpeg') center center/cover no-repeat fixed;
+} */
+
+
+/*Estilos da Seção de Galeria (F05)*/
+
+.gallery-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    padding-left: 2rem; 
+    padding-right: 200px;
 }
 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 800px; 
+  margin: 0 auto;
+}
+
+
+/* Título da Seção */
+.section-title {
+  font-family: 'Share Tech Mono', 'Courier New', Courier, monospace;
+  color: #ffd700;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+/* Cada Item da Galeria */
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border: 2px solid #444;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efeito Hover */
+.gallery-item img:hover {
+  transform: scale(1.03);
+  border-color: #ffd700;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+
+
+
+/*Estilos do Item de Vídeo na Galeria*/
+
+.video-item .video-link {
+  position: relative; 
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* O ícone de Play */
+.video-item .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+
+  /* Estilo */
+  font-size: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 80px; 
+  text-shadow: 0 0 10px black;
+
+  /* Animação */
+  transition: all 0.2s ease-in-out;
+  opacity: 0.8;
+}
+
+/* Efeito Hover no ícone de Play */
+.video-item .video-link:hover .play-icon {
+  transform: translate(-50%, -50%) scale(1.1); 
+  opacity: 1;
+  background-color: rgba(255, 215, 0, 0.8); 
+  color: black;
+}
+
+/* Efeito Hover na imagem de fundo */
+.video-item .video-link:hover img {
+    transform: scale(1.03);
+    border-color: #ffd700;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+
+
+
+@media (min-width: 740px) {
+  
+  .video-item {
+    grid-column: 1 / -1;
+  }
+
+  .video-item .video-link {
+    max-width: 70%; 
+    margin: 0 auto;
+  }
+
+}
