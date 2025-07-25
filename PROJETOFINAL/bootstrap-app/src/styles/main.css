@@ -67,6 +67,34 @@
   color: #ffd700;
 }
 
+/* Player de áudio cinza */
+audio {
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius: 5px;
+  width: 120px !important;
+  height: 30px !important;
+}
+
+/* Painel de controles cinza */
+audio::-webkit-media-controls-panel {
+  background-color: #666 !important;
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: #666 !important;
+  border-radius: 3px !important;
+}
+
+audio::-webkit-media-controls-timeline {
+  background-color: #666 !important;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  color: #666 !important;
+}
+
 
 
 
