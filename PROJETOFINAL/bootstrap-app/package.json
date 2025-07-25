@@ -1,0 +1,17 @@
+{
+  "name": "bootstrap-app",
+  "version": "1.0.0",
+  "description": "A simple web application using Bootstrap for styling.",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "author": "",
+  "license": "ISC"
+}

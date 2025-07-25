@@ -1,0 +1,65 @@
+/* Fonte terminal */
+.terminal-font {
+  font-family: 'Share Tech Mono', 'Courier New', Courier, monospace;
+}
+
+/* Cores neon */
+.text-neon-green {
+  color: #00ff00 !important;
+}
+.text-neon-yellow {
+  color: #ffd700 !important;
+}
+
+/* Botões estilo terminal */
+.btn-neon-green {
+  background-color: #00ff00;
+  color: black;
+  font-weight: bold;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+.btn-neon-green:hover {
+  background-color: #00cc00;
+  color: black;
+}
+
+.btn-outline-neon-green {
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  font-weight: bold;
+}
+.btn-outline-neon-green:hover {
+  background-color: #00ff00;
+  color: black;
+}
+
+/* Hero background estilo terminal */
+.hero-section {
+  min-height: 100vh;
+  background: url('https://cdn.wallpapersafari.com/30/3/RnyEio.gif') center/cover no-repeat;
+  position: relative;
+  color: white;
+}
+
+/* Animação de cursor piscar */
+.cursor-blink {
+  display: inline-block;
+  animation: blink 1s steps(2, start) infinite;
+  color: #eff575;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+.scroll-text {
+  color: #ffd700;
+}
+
+body {
+  background: url('img/back1.jpeg') center center/cover no-repeat fixed;
+}
+
