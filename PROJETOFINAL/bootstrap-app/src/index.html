@@ -18,36 +18,29 @@
 
   <!-- Header -->
   <header class="border-bottom border-secondary bg-dark position-fixed top-0 start-0 w-100" style="height: 110px; min-height: 0; padding: 0; z-index: 1050;">
-    <div class="container-fluid d-flex flex-column align-items-center justify-content-center" style="height: 100px;">
-      <!-- Logo centralizada, mais para cima -->
-      <img src="img/starwars.png" alt="Logo Star Wars" style="height:110px; margin-bottom: 0;">
+    <div class="container-fluid d-flex align-items-center justify-content-between" style="height: 100px; padding: 0 50px;">
+      <!-- Menu esquerdo -->
+      <nav class="d-flex">
+        <a href="#inicio" class="nav-link text-warning bg-transparent px-3 me-3">INÍCIO</a>
+        <a href="#sobre" class="nav-link text-warning bg-transparent px-3">SOBRE O JOGO</a>
+      </nav>
+      
+      <!-- Logo centralizada -->
+      <img src="img/starwars.png" alt="Logo Star Wars" style="height:90px;">
+      
+      <!-- Menu direito -->
+      <nav class="d-flex">
+        <a href="#requisitos" class="nav-link text-warning bg-transparent px-3 me-3">RECURSOS</a>
+        <a href="#download" class="nav-link text-warning bg-transparent px-3">DOWNLOAD</a>
+      </nav>
     </div>
-    <!-- Áudio no lado esquerdo superior -->
-    <div class="position-absolute top-0 start-0 m-4">
+    <!-- Áudio no lado direito inferior -->
+    <div class="position-absolute end-0 m-4" style="bottom: -100px;">
       <audio controls style="width: 200px; height: 35px;">
         <source src="audio/starwars.mp3" type="audio/mpeg">
         Seu navegador não suporta o elemento de áudio.
       </audio>
     </div>
-    <!-- Botão à direita no topo -->
-    <a href="#download" class="btn btn-warning position-absolute top-0 end-0 m-4" style="border-radius: 25px; font-weight: bold;">BAIXAR AGORA</a>
-    <!-- Menu vertical à direita -->
-    <nav class="position-absolute top-0 end-0 me-5" style="z-index:10; margin-top: 180px;">
-      <ul class="nav flex-column align-items-end">
-        <li class="nav-item mb-4">
-          <a href="#inicio" class="nav-link text-warning bg-transparent px-3">INÍCIO</a>
-        </li>
-        <li class="nav-item mb-4">
-          <a href="#sobre" class="nav-link text-warning bg-transparent px-3">SOBRE O JOGO</a>
-        </li>
-        <li class="nav-item mb-4">
-          <a href="#requisitos" class="nav-link text-warning bg-transparent px-3">RECURSOS</a>
-        </li>
-        <li class="nav-item mb-4">
-          <a href="#download" class="nav-link text-warning bg-transparent px-3">DOWNLOAD</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <!-- Hero -->
@@ -72,6 +65,53 @@
     </div>
   </section>
 
+  <!-- Seção Recursos do Jogo -->
+  <section id="requisitos" class="recursos-section py-5 bg-black">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">
+        &gt; RECURSOS DO JOGO
+      </h2>
+      
+      <div class="recursos-grid">
+        <div class="recurso-card">
+          <div class="recurso-icon">📖</div>
+          <h3>&gt; Narrativa Épica</h3>
+          <p>História original ambientada no universo Star Wars com múltiplas escolhas que afetam o destino da galáxia</p>
+        </div>
+        
+        <div class="recurso-card">
+          <div class="recurso-icon">🎮</div>
+          <h3>&gt; Sistema RPG Completo</h3>
+          <p>Desenvolva habilidades, colete equipamentos e personalize sua experiência de jogo</p>
+        </div>
+        
+        <div class="recurso-card">
+          <div class="recurso-icon">💻</div>
+          <h3>&gt; Interface Terminal Autêntica</h3>
+          <p>Experiência nostálgica com interface de linha de comando modernizada</p>
+        </div>
+        
+        <div class="recurso-card">
+          <div class="recurso-icon">⚔️</div>
+          <h3>&gt; Combate Estratégico</h3>
+          <p>Sistema de combate baseado em turnos com elementos táticos e de estratégia</p>
+        </div>
+        
+        <div class="recurso-card highlighted">
+          <div class="recurso-icon">🌌</div>
+          <h3>&gt; Exploração Galáctica</h3>
+          <p>Viaje por planetas icônicos e descubra novos mundos no universo Star Wars</p>
+        </div>
+        
+        <div class="recurso-card">
+          <div class="recurso-icon">🔀</div>
+          <h3>&gt; Escolhas Consequentes</h3>
+          <p>Suas decisões moldam a história e determinam o lado da Força que você seguirá</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Seção Captura de Tela -->
 
@@ -84,11 +124,11 @@
 
 
       <div class="scroll-gallery">
-        <img src="./img/capturaDeTela01.jpg" alt="Screenshot de uma batalha espacial no jogo">
-        <img src="./img/capturaDeTela03.jpg" alt="Descrição da imagem 3">
-        <img src="./img/capturaDeTela04.png" alt="Descrição da imagem 4">
-        <img src="./img/capturaDeTela02.jpg" alt="Screenshot do interior de uma nave espacial">
-        <img src="./img/capturaDeTela05.avif" alt="Descrição da imagem 5">
+        <img src="./img/jogo1.jpeg" alt="Screenshot do jogo Star Wars">
+        <img src="./img/jogo2.jpeg" alt="Screenshot do jogo Star Wars">
+        <img src="./img/jogo3.jpeg" alt="Screenshot do jogo Star Wars">
+        <img src="./img/jogo5.jpeg" alt="Screenshot do jogo Star Wars">
+        <img src="./img/jogo7.jpeg" alt="Screenshot do jogo Star Wars">
       </div>
 
       <div class="video-item-separado">

@@ -67,32 +67,135 @@
   color: #ffd700;
 }
 
-/* Player de áudio cinza */
-audio {
-  background-color: #666;
-  border: 1px solid #666;
-  border-radius: 5px;
-  width: 120px !important;
-  height: 30px !important;
+/* Seção Recursos do Jogo */
+.recursos-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/back2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 5rem 0;
 }
 
-/* Painel de controles cinza */
+.recursos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.recurso-card {
+  background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+  border: 2px solid #333;
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.recurso-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.recurso-card:hover::before {
+  left: 100%;
+}
+
+.recurso-card:hover {
+  border-color: #ffd700;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+}
+
+.recurso-card.highlighted {
+  border-color: #ffd700;
+  background: linear-gradient(145deg, #2a2a0a, #1a1a00);
+}
+
+.recurso-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.recurso-card:hover .recurso-icon {
+  filter: grayscale(0%);
+}
+
+.recurso-card h3 {
+  color: #ffd700;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.recurso-card p {
+  color: #ccc;
+  font-family: 'Share Tech Mono', monospace;
+  line-height: 1.4;
+  font-size: 0.75rem;
+}
+
+.recurso-card.highlighted h3 {
+  color: #ffed4e;
+}
+
+.recurso-card.highlighted p {
+  color: #f0f0f0;
+}
+
+/* Player de áudio estilizado */
+audio {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  width: 150px !important;
+  height: 40px !important;
+  outline: none;
+}
+
+audio:focus {
+  border-color: #00ff00;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+/* Painel de controles estilizado */
 audio::-webkit-media-controls-panel {
-  background-color: #666 !important;
+  background-color: #1a1a1a !important;
+  border-radius: 6px;
 }
 
 audio::-webkit-media-controls-play-button {
-  background-color: #666 !important;
-  border-radius: 3px !important;
+  background-color: #ffd700 !important;
+  border-radius: 50% !important;
+  filter: invert(0);
+}
+
+audio::-webkit-media-controls-play-button:hover {
+  background-color: #00ff00 !important;
 }
 
 audio::-webkit-media-controls-timeline {
-  background-color: #666 !important;
+  background-color: #333 !important;
+  border-radius: 4px;
 }
 
 audio::-webkit-media-controls-current-time-display,
 audio::-webkit-media-controls-time-remaining-display {
-  color: #666 !important;
+  color: #ffd700 !important;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.8rem;
 }
 
 
@@ -104,7 +207,7 @@ audio::-webkit-media-controls-time-remaining-display {
     padding-top: 4rem;
     padding-bottom: 4rem;
     padding-left: 2rem; 
-    padding-right: 200px;
+    padding-right: 2rem;
 
     background-image: 
       linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -133,23 +236,27 @@ audio::-webkit-media-controls-time-remaining-display {
   scroll-snap-type: x mandatory;
   padding: 1rem 1rem 1.5rem 1rem;
   border: 2px solid #444;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .scroll-gallery img {
-  width: 65%;
+  width: 300px;
+  height: 200px;
   flex-shrink: 0;
   scroll-snap-align: center;
   object-fit: cover;
-  aspect-ratio: 16 / 9;
+  border-radius: 8px;
 }
 
 /* --- Item de Vídeo Separado --- */
 .video-item-separado {
-  max-width: 550px;
+  max-width: 600px;
   margin: 3rem auto 0 auto;
   border: 2px solid #444;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .video-item-separado .video-link {
