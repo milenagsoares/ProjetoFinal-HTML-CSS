@@ -67,7 +67,94 @@
   color: #ffd700;
 }
 
-body {
-  background: url('img/back1.jpeg') center center/cover no-repeat fixed;
+
+
+
+/*Estilos da Seção de Galeria (F05)*/
+
+.gallery-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem; 
+    padding-right: 200px;
+
+    background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url('../img/plano_de_fundo_GaleriaMidia.webp'); 
+  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    background-attachment: fixed; 
 }
 
+/* --- Título da Seção --- */
+.section-title {
+  font-family: 'Share Tech Mono', 'Courier New', Courier, monospace;
+  color: #ffd700;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* --- Galeria de Rolagem Horizontal --- */
+.scroll-gallery {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem 1rem 1.5rem 1rem;
+  border: 2px solid #444;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.scroll-gallery img {
+  width: 65%;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+
+/* --- Item de Vídeo Separado --- */
+.video-item-separado {
+  max-width: 550px;
+  margin: 3rem auto 0 auto;
+  border: 2px solid #444;
+}
+
+.video-item-separado .video-link {
+  position: relative;
+  display: block;
+}
+
+.video-item-separado img {
+  display: block;
+  width: 100%;
+}
+
+.video-item-separado .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+  opacity: 0.8;
+}
+
+.video-item-separado .video-link:hover .play-icon {
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
+  background-color: rgba(255, 215, 0, 0.8);
+  color: black;
+}
