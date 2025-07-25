@@ -19,7 +19,7 @@
   <!-- Header -->
   <header class="border-bottom border-secondary bg-dark position-fixed top-0 start-0 w-100" style="height: 110px; min-height: 0; padding: 0; z-index: 1050;">
     <div class="container-fluid d-flex flex-column align-items-center justify-content-center" style="height: 100px;">
-      <!-- Logo centralizada, mais para cima -->
+    
       <img src="img/starwars.png" alt="Logo Star Wars" style="height:110px; margin-bottom: 0;">
     </div>
     <!-- Botão à direita no topo -->
@@ -100,6 +100,34 @@
   <footer class="text-center py-3 bg-dark text-muted border-top border-secondary">
     <small>&copy; 2025 Star Wars - Code Padawans.</small>
   </footer>
+
+  <!-- Player de áudio customizado Star Wars -->
+<div id="audio-player-custom">
+  <button id="play-audio-btn">▶</button>
+  <audio id="starwars-audio" src="audio/starwars.mp3"></audio>
+</div>
+
+<script>
+  const playBtn = document.getElementById('play-audio-btn');
+  const audio = document.getElementById('starwars-audio');
+  let isPlaying = false;
+
+  playBtn.addEventListener('click', function() {
+    if (!isPlaying) {
+      audio.play();
+      playBtn.textContent = '⏸';
+    } else {
+      audio.pause();
+      playBtn.textContent = '▶';
+    }
+    isPlaying = !isPlaying;
+  });
+
+  audio.addEventListener('ended', function() {
+    playBtn.textContent = '▶';
+    isPlaying = false;
+  });
+</script>
 
 </body>
 </html>

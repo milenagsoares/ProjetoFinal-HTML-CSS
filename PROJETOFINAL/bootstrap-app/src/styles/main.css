@@ -67,9 +67,6 @@
   color: #ffd700;
 }
 
-
-
-
 /*Estilos da Seção de Galeria (F05)*/
 
 .gallery-section {
@@ -157,4 +154,28 @@
   opacity: 1;
   background-color: rgba(255, 215, 0, 0.8);
   color: black;
+}
+
+/* Player de áudio customizado Star Wars */
+#audio-player-custom {
+  position: fixed;
+  top: 20px;      /* distância do topo */
+  left: 30px;     /* distância da esquerda */
+  z-index: 1100;
+}
+
+#play-audio-btn {
+  background: #ffd700;
+  border: none;
+  border-radius: 50%;
+  width: 36px;      /* reduzido */
+  height: 36px;     /* reduzido */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem; /* reduzido */
+  color: black;
+  box-shadow: 0 0 8px #ffd70080; /* reduzido */
+  cursor: pointer;
+  transition: background 0.2s;
 }
