@@ -67,6 +67,94 @@
   color: #ffd700;
 }
 
+/* Seção Sobre o Jogo */
+.sobre-jogo-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/back2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 5rem 0;
+}
+
+.sobre-jogo-section .section-title {
+  font-family: 'Share Tech Mono', 'Courier New', Courier, monospace;
+  color: #ffd700;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sobre-jogo-section h3 {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+.sobre-jogo-section p {
+  color: #ffd700;
+  font-family: 'Share Tech Mono', monospace;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.sobre-card {
+  background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+  border: 2px solid #333;
+  border-radius: 6px;
+  padding: 2rem;
+  text-align: left;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.sobre-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.sobre-card:hover::before {
+  left: 100%;
+}
+
+.sobre-card:hover {
+  border-color: #ffd700;
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+}
+
+.game-screenshot {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 2px solid #333;
+  transition: all 0.3s ease;
+  max-width: 450px;
+  margin: 0 auto;
+  height: 480px;
+}
+
+.game-screenshot:hover {
+  border-color: #ffd700;
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+}
+
+.game-screenshot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.game-screenshot:hover img {
+  transform: scale(1.05);
+}
+
 /* Seção Recursos do Jogo */
 .recursos-section {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/back2.jpg');
@@ -156,7 +244,7 @@
   color: #f0f0f0;
 }
 
-/* Player de áudio estilizado */
+/* Player de áudio */
 audio {
   background-color: #1a1a1a;
   border-radius: 8px;
@@ -170,7 +258,7 @@ audio:focus {
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
 }
 
-/* Painel de controles estilizado */
+/* Painel de controles  */
 audio::-webkit-media-controls-panel {
   background-color: #1a1a1a !important;
   border-radius: 6px;
@@ -200,6 +288,591 @@ audio::-webkit-media-controls-time-remaining-display {
 
 
 
+
+/* Seção Download */
+.download-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/back2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 5rem 0;
+}
+
+.platforms-section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.platform-card {
+  background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.platform-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.platform-card:hover::before {
+  left: 100%;
+}
+
+.platform-card:hover {
+  border-color: #ffd700;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+}
+
+.platform-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.platform-card:hover .platform-icon {
+  filter: grayscale(0%);
+}
+
+.platform-card h4 {
+  color: #ffd700;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.platform-card p {
+  color: #ffd700;
+  font-family: 'Share Tech Mono', monospace;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.platform-info {
+  color: #ffd700 !important;
+  font-weight: bold;
+  margin-bottom: 1.5rem !important;
+}
+
+.btn-download {
+  background: linear-gradient(145deg, #ffd700, #ffcc00);
+  color: #000;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.btn-download:hover {
+  background: linear-gradient(145deg, #ffcc00, #ffaa00);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+.btn-download:active {
+  transform: translateY(0);
+}
+
+/* Seção Cadastro - Formulário Acessível */
+.registration-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/back3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 5rem 0;
+}
+
+.registration-card {
+  background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+  border: 2px solid #333;
+  border-radius: 12px;
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.registration-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ffd700, #ffed4e, #ffd700);
+  border-radius: 12px 12px 0 0;
+}
+
+/* Grupos de formulário */
+.form-group {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.form-label {
+  display: block;
+  color: #ffd700;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.form-label:hover {
+  color: #ffed4e;
+}
+
+/* Inputs de texto, email, date */
+.form-input {
+  width: 100%;
+  background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+  border: 2px solid #444;
+  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  outline: none;
+  position: relative;
+}
+
+.form-input:focus {
+  border-color: #ffd700;
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1);
+  background: linear-gradient(145deg, #2a2a1a, #1a1a0a);
+}
+
+.form-input:hover:not(:focus) {
+  border-color: #666;
+}
+
+/* Validação CSS automática */
+.form-input:valid:not(:placeholder-shown) {
+  border-color: #44ff44;
+  box-shadow: 0 0 0 3px rgba(68, 255, 68, 0.1);
+}
+
+.form-input:invalid:not(:placeholder-shown):not(:focus) {
+  border-color: #ff4444;
+  box-shadow: 0 0 0 3px rgba(255, 68, 68, 0.1);
+}
+
+/* Ícones de validação */
+.form-input:valid:not(:placeholder-shown)::after {
+  content: '✓';
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #44ff44;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+/* Estados especiais para campos obrigatórios */
+.form-input:required:invalid:not(:placeholder-shown) + .form-help::after {
+  content: ' - Campo inválido';
+  color: #ff4444;
+  font-weight: bold;
+}
+
+.form-input:valid:not(:placeholder-shown) + .form-help::after {
+  content: ' ✓ Válido';
+  color: #44ff44;
+  font-weight: bold;
+}
+
+/* Validação para radio buttons obrigatórios */
+input[type="radio"]:required:invalid + .radio-label::after {
+  content: '';
+  color: #ff4444;
+  font-size: 0.8rem;
+}
+
+input[type="radio"]:checked + .radio-label::after {
+  content: '';
+}
+
+/* Validação para checkbox obrigatório */
+input[type="checkbox"]:required:invalid + .checkbox-label::after {
+  content: '';
+  color: #ff4444;
+  font-size: 0.8rem;
+}
+
+input[type="checkbox"]:checked + .checkbox-label::after {
+  content: '';
+}
+
+/* Fieldsets */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+fieldset legend {
+  padding: 0;
+  margin-bottom: 1rem;
+  width: auto;
+}
+
+/* Radio buttons */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.radio-input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #444;
+  border-radius: 50%;
+  margin-right: 1rem;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.radio-input:focus {
+  outline: 3px solid rgba(255, 215, 0, 0.3);
+  outline-offset: 2px;
+}
+
+.radio-input:hover {
+  border-color: #666;
+}
+
+.radio-input:checked {
+  border-color: #ffd700;
+  background: radial-gradient(circle, #ffd700 0%, #ffd700 40%, transparent 50%);
+}
+
+.radio-input:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffd700;
+}
+
+.radio-label {
+  color: #ccc;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  line-height: 1.4;
+}
+
+.radio-input:checked + .radio-label {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.radio-label:hover {
+  color: #fff;
+}
+
+/* Checkboxes */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.checkbox-input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #444;
+  border-radius: 4px;
+  margin-right: 1rem;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.checkbox-input:focus {
+  outline: 3px solid rgba(255, 215, 0, 0.3);
+  outline-offset: 2px;
+}
+
+.checkbox-input:hover {
+  border-color: #666;
+}
+
+.checkbox-input:checked {
+  border-color: #ffd700;
+  background: linear-gradient(145deg, #ffd700, #ffcc00);
+}
+
+.checkbox-input:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.checkbox-label {
+  color: #ccc;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  line-height: 1.4;
+}
+
+.checkbox-input:checked + .checkbox-label {
+  color: #ffd700;
+}
+
+.checkbox-label:hover {
+  color: #fff;
+}
+
+.checkbox-label a {
+  color: #ffd700;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.checkbox-label a:hover {
+  color: #ffed4e;
+}
+
+/* Textos de ajuda */
+.form-help {
+  color: #999;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  line-height: 1.4;
+}
+
+/* Ações do formulário */
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.btn-submit,
+.btn-reset {
+  padding: 1rem 2rem;
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-submit {
+  background: linear-gradient(145deg, #ffd700, #ffcc00);
+  color: #000;
+  flex: 1;
+  min-width: 200px;
+}
+
+.btn-submit:hover:not(:disabled) {
+  background: linear-gradient(145deg, #ffcc00, #ffaa00);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-reset {
+  background: linear-gradient(145deg, #444, #333);
+  color: #fff;
+  border: 2px solid #666;
+}
+
+.btn-reset:hover {
+  background: linear-gradient(145deg, #555, #444);
+  border-color: #888;
+  transform: translateY(-2px);
+}
+
+/* Mensagem de sucesso */
+.success-message {
+  display: none;
+  background: linear-gradient(145deg, #1a4a1a, #0f2f0f);
+  border: 2px solid #44ff44;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  animation: slideIn 0.5s ease-out;
+}
+
+/* Mostrar mensagem quando todos os campos obrigatórios estão válidos */
+.registration-form:valid .success-message {
+  display: block;
+}
+
+/* Esconder mensagem se algum campo obrigatório estiver inválido */
+.registration-form:invalid .success-message {
+  display: none;
+}
+
+.success-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.success-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.success-message strong {
+  color: #44ff44;
+  font-family: 'Share Tech Mono', monospace;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.success-message p {
+  color: #ccc;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Animação do botão submit quando formulário estiver válido */
+.registration-form:valid .btn-submit {
+  background: linear-gradient(145deg, #44ff44, #33cc33);
+  animation: pulse 2s infinite;
+}
+
+.registration-form:valid .btn-submit::before {
+  content: '✓ ';
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(68, 255, 68, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(68, 255, 68, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(68, 255, 68, 0); }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .registration-card {
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .btn-submit,
+  .btn-reset {
+    width: 100%;
+    min-width: auto;
+  }
+  
+  .radio-group,
+  .checkbox-group {
+    gap: 1rem;
+  }
+}
+
+/* Estados de focus visível para melhor acessibilidade */
+@media (prefers-reduced-motion: no-preference) {
+  .form-input,
+  .radio-input,
+  .checkbox-input,
+  .btn-submit,
+  .btn-reset {
+    transition: all 0.3s ease;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .form-input,
+  .radio-input,
+  .checkbox-input,
+  .btn-submit,
+  .btn-reset {
+    transition: none;
+  }
+  
+  .success-message {
+    animation: none;
+  }
+}
 
 /*Estilos da Seção de Galeria (F05)*/
 
@@ -236,7 +909,7 @@ audio::-webkit-media-controls-time-remaining-display {
   scroll-snap-type: x mandatory;
   padding: 1rem 1rem 1.5rem 1rem;
   border: 2px solid #444;
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
   justify-content: center;
 }

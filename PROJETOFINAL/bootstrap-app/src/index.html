@@ -31,7 +31,8 @@
       <!-- Menu direito -->
       <nav class="d-flex">
         <a href="#requisitos" class="nav-link text-warning bg-transparent px-3 me-3">RECURSOS</a>
-        <a href="#download" class="nav-link text-warning bg-transparent px-3">DOWNLOAD</a>
+        <a href="#download" class="nav-link text-warning bg-transparent px-3 me-3">DOWNLOAD</a>
+        <a href="#cadastro" class="nav-link text-warning bg-transparent px-3">CADASTRO</a>
       </nav>
     </div>
     <!-- Áudio no lado direito inferior -->
@@ -59,8 +60,50 @@
             que combina nostalgia retrô com narrativa moderna. Comande sua nave,<br>
             construa seu personagem e determine o destino da galáxia.
           </p>
+          <p class="text-success text-center mt-4" style="font-family: 'Share Tech Mono', monospace; font-size: 1.1rem; font-weight: bold;">
+            &gt; May the Force be with you! <span class="cursor-blink">█</span>
+          </p>
         </div>
         <span class="scroll-text">SCROLL TO EXPLORE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Sobre o Jogo -->
+  <section id="sobre" class="sobre-jogo-section py-5 bg-black">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="sobre-card">
+            <h2 class="section-title mb-4">
+              &gt; SOBRE O JOGO
+            </h2>
+            <p class="text-warning mb-4" style="font-family: 'Share Tech Mono', monospace;">
+              Uma experiência RPG única que combina a nostalgia dos terminais clássicos com a rica narrativa do universo Star Wars
+            </p>
+            
+            <div class="sobre-content">
+              <h3 class="text-neon-green mb-3">&gt; A Galáxia Te Aguarda</h3>
+              <p class="mb-4">
+                Star Wars Terminal Edition é um RPG revolucionário que transporta você para uma galáxia muito, muito distante através de uma interface de terminal nostálgica e moderna.
+              </p>
+              
+              <p class="mb-4">
+                Crie seu personagem, escolha seu destino entre Jedi, Sith ou contrabandista, e viva aventuras épicas que moldarão o equilíbrio da Força na galáxia.
+              </p>
+              
+              <p class="mb-0">
+                Com narrativa ramificada, combate estratégico e exploração livre, cada decisão importa e cada jornada é única.
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6">
+          <div class="game-screenshot">
+            <img src="./img/jogo1.jpeg" alt="Screenshot do jogo mostrando interface terminal" class="img-fluid rounded">
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -112,6 +155,297 @@
     </div>
   </section>
 
+  <!-- Seção Download -->
+  <section id="download" class="download-section py-5 bg-black">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title mb-4">
+          &gt; DOWNLOAD
+        </h2>
+        <p class="text-success mb-4" style="font-family: 'Share Tech Mono', monospace; font-size: 1.1rem;">
+          Baixe Star Wars Terminal Edition gratuitamente e comece sua jornada épica
+        </p>
+        <p class="text-warning mb-4" style="font-family: 'Share Tech Mono', monospace;">
+          💾 100% Gratuito | Sem DRM | Código Aberto
+        </p>
+      </div>
+
+      <div class="platforms-section">
+        <h3 class="text-center text-warning mb-5" style="font-family: 'Share Tech Mono', monospace; font-size: 1.5rem;">
+          &gt; ESCOLHA SUA PLATAFORMA
+        </h3>
+        
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="platform-card">
+              <div class="platform-icon">💻</div>
+              <h4>Windows</h4>
+              <p>Compatível com Windows 7 ou superior</p>
+              <p class="platform-info">Tamanho: 45 MB</p>
+              <button class="btn-download">
+                ⬇️ BAIXAR
+              </button>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="platform-card">
+              <div class="platform-icon">📱</div>
+              <h4>macOS</h4>
+              <p>Requer macOS 10.12 ou superior</p>
+              <p class="platform-info">Tamanho: 42 MB</p>
+              <button class="btn-download">
+                ⬇️ BAIXAR
+              </button>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="platform-card">
+              <div class="platform-icon">🖥️</div>
+              <h4>Linux</h4>
+              <p>Ubuntu, Debian, Fedora e outras distribuições</p>
+              <p class="platform-info">Tamanho: 38 MB</p>
+              <button class="btn-download">
+                ⬇️ BAIXAR
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Cadastro -->
+  <section id="cadastro" class="registration-section py-5 bg-black">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-6">
+          <div class="registration-card">
+            <div class="text-center mb-4">
+              <h2 class="section-title mb-3">
+                &gt; JUNTE-SE À REBELIÃO
+              </h2>
+              <p class="text-warning mb-4" style="font-family: 'Share Tech Mono', monospace;">
+                Cadastre-se para receber updates, beta access e conteúdo exclusivo
+              </p>
+            </div>
+
+            <form class="registration-form" aria-label="Formulário de cadastro de jogadores" method="post" action="#cadastro">
+              <!-- Nome Completo -->
+              <div class="form-group">
+                <label for="fullName" class="form-label">
+                  <span class="text-warning">&gt;</span> Nome Completo *
+                </label>
+                <input 
+                  type="text" 
+                  id="fullName" 
+                  name="fullName" 
+                  class="form-input" 
+                  required 
+                  minlength="2"
+                  pattern="[A-Za-zÀ-ÿ\s]+"
+                  autocomplete="name"
+                  placeholder="Digite seu nome completo"
+                >
+                <div class="form-help">
+                  Digite seu nome completo para identificação
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email" class="form-label">
+                  <span class="text-warning">&gt;</span> Email *
+                </label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  class="form-input" 
+                  required 
+                  autocomplete="email"
+                  placeholder="seuemail@exemplo.com"
+                >
+                <div class="form-help">
+                  Utilizaremos seu email para enviar updates do jogo
+                </div>
+              </div>
+
+              <!-- Data de Nascimento -->
+              <div class="form-group">
+                <label for="birthDate" class="form-label">
+                  <span class="text-warning">&gt;</span> Data de Nascimento *
+                </label>
+                <input 
+                  type="date" 
+                  id="birthDate" 
+                  name="birthDate" 
+                  class="form-input" 
+                  required 
+                  min="1900-01-01"
+                  max="2011-12-31"
+                  autocomplete="bday"
+                >
+                <div class="form-help">
+                  Necessário para verificação de idade (13+ anos)
+                </div>
+              </div>
+
+              <!-- Lado da Força -->
+              <fieldset class="form-group">
+                <legend class="form-label">
+                  <span class="text-warning">&gt;</span> Escolha seu lado da Força *
+                </legend>
+                <div class="radio-group">
+                  <div class="radio-item">
+                    <input 
+                      type="radio" 
+                      id="lightSide" 
+                      name="forceSide" 
+                      value="light" 
+                      class="radio-input" 
+                      required
+                    >
+                    <label for="lightSide" class="radio-label">
+                      ⭐ Lado Luminoso da Força
+                    </label>
+                  </div>
+                  <div class="radio-item">
+                    <input 
+                      type="radio" 
+                      id="darkSide" 
+                      name="forceSide" 
+                      value="dark" 
+                      class="radio-input" 
+                      required
+                    >
+                    <label for="darkSide" class="radio-label">
+                      ⚡ Lado Sombrio da Força
+                    </label>
+                  </div>
+                  <div class="radio-item">
+                    <input 
+                      type="radio" 
+                      id="neutral" 
+                      name="forceSide" 
+                      value="neutral" 
+                      class="radio-input" 
+                      required
+                    >
+                    <label for="neutral" class="radio-label">
+                      ⚖️ Neutro/Indeciso
+                    </label>
+                  </div>
+                </div>
+                <div class="form-help">
+                  Sua escolha influenciará o conteúdo que você receberá
+                </div>
+              </fieldset>
+
+              <!-- Interesses -->
+              <fieldset class="form-group">
+                <legend class="form-label">
+                  <span class="text-warning">&gt;</span> Interesses (opcional)
+                </legend>
+                <div class="checkbox-group">
+                  <div class="checkbox-item">
+                    <input 
+                      type="checkbox" 
+                      id="betaAccess" 
+                      name="interests" 
+                      value="beta" 
+                      class="checkbox-input"
+                    >
+                    <label for="betaAccess" class="checkbox-label">
+                      🚀 Acesso antecipado a versões beta
+                    </label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input 
+                      type="checkbox" 
+                      id="newsletter" 
+                      name="interests" 
+                      value="newsletter" 
+                      class="checkbox-input"
+                    >
+                    <label for="newsletter" class="checkbox-label">
+                      📧 Newsletter semanal
+                    </label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input 
+                      type="checkbox" 
+                      id="events" 
+                      name="interests" 
+                      value="events" 
+                      class="checkbox-input"
+                    >
+                    <label for="events" class="checkbox-label">
+                      🎮 Eventos e torneios
+                    </label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input 
+                      type="checkbox" 
+                      id="merchandise" 
+                      name="interests" 
+                      value="merchandise" 
+                      class="checkbox-input"
+                    >
+                    <label for="merchandise" class="checkbox-label">
+                      🛍️ Lançamentos de merchandise
+                    </label>
+                  </div>
+                </div>
+                <div class="form-help">
+                  Selecione os tipos de conteúdo que deseja receber
+                </div>
+              </fieldset>
+
+              <!-- Termos e Condições -->
+              <div class="form-group">
+                <div class="checkbox-item">
+                  <input 
+                    type="checkbox" 
+                    id="terms" 
+                    name="terms" 
+                    class="checkbox-input" 
+                    required 
+                  >
+                  <label for="terms" class="checkbox-label">
+                    Aceito os <a href="#" class="link-warning">Termos de Uso</a> e 
+                    <a href="#" class="link-warning">Política de Privacidade</a> *
+                  </label>
+                </div>
+              </div>
+
+              <!-- Botões -->
+              <div class="form-actions">
+                <button type="submit" class="btn-submit">
+                  🚀 INICIAR JORNADA
+                </button>
+                <button type="reset" class="btn-reset">
+                  🔄 Limpar Formulário
+                </button>
+              </div>
+
+              <!-- Mensagem de sucesso (será mostrada via CSS quando form for submetido) -->
+              <div class="success-message">
+                <div class="success-content">
+                  <span class="success-icon">✅</span>
+                  <div>
+                    <strong>Dados validados com sucesso!</strong>
+                    <p>Formulário preenchido corretamente. Bem-vindo à Rebelião!</p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Seção Captura de Tela -->
 
@@ -129,6 +463,9 @@
         <img src="./img/jogo3.jpeg" alt="Screenshot do jogo Star Wars">
         <img src="./img/jogo5.jpeg" alt="Screenshot do jogo Star Wars">
         <img src="./img/jogo7.jpeg" alt="Screenshot do jogo Star Wars">
+        <img src="./img/capturaDeTela01.jpg" alt="Captura de tela - Interface de terminal">
+        <img src="./img/capturaDeTela02.jpg" alt="Captura de tela - Combate espacial">
+    
       </div>
 
       <div class="video-item-separado">
@@ -202,6 +539,8 @@
     </div>
 </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
