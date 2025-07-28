@@ -63,14 +63,18 @@ Acesse a versão final do projeto hospedada na Vercel:
 
 ## 🎨 Identidade Visual
 
+![Guia de Cores e Tipografia](./src/img/guia-cores.png)
+
 O projeto segue um guia de estilo consistente para manter a imersão.
 
 * **Paleta de Cores:**
-    * `Cor Primária (Amarelo): #ffd700`
-    * `Cor Secundária (Verde Neon): #00ff00`
-    * `Cor de Fundo (Preto): #000000`
-    * `Cor do Texto (Cinza Claro): #cccccc`
-    * `Bordas (Cinza Escuro): #333333`
+   | Elemento         | Cor Hex    | Visual |
+   |------------------|------------|--------|
+   | Cor Primária   | `#FFD700`  | <span style="background-color:#FFD700;color:#000;padding:4px 12px;border-radius:6px;font-family:monospace;">#FFD700</span> |
+   | 🧬 Cor Secundária | `#00FF00`  | <span style="background-color:#00FF00;color:#000;padding:4px 12px;border-radius:6px;font-family:monospace;">#00FF00</span> |
+   | 🌑 Fundo          | `#000000`  | <span style="background-color:#000000;color:#fff;padding:4px 12px;border-radius:6px;font-family:monospace;">#000000</span> |
+   | 📄 Texto          | `#CCCCCC`  | <span style="background-color:#CCCCCC;color:#000;padding:4px 12px;border-radius:6px;font-family:monospace;">#CCCCCC</span> |
+   | 🧱 Bordas         | `#333333`  | <span style="background-color:#333333;color:#fff;padding:4px 12px;border-radius:6px;font-family:monospace;">#333333</span> |
 
 * **Tipografia:**
     * **Fonte Principal:** `Share Tech Mono` (importada do Google Fonts).
