@@ -967,7 +967,33 @@ fieldset legend {
   color: black;
 }
 
+/*Estilos da Página de Sucesso (F06)*/
 
+.success-page-container {
+  min-height: 100vh;
+  padding: 2rem; 
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../img/back2.jpg'); 
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+}
+
+.success-card {
+  background: rgba(15, 15, 15, 0.7); 
+  border-radius: 8px;
+  padding: 2.5rem 3rem;
+  max-width: 700px; 
+  
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
 
 /*Estilos do Rodapé (Footer)*/
 
