@@ -18,7 +18,7 @@
 
 Acesse a versão final do projeto hospedada na Vercel:
 
-**[Deploy em breve](https://SEU-LINK-AQUI.vercel.app)**
+**[Link do Projeto](https://code-padawans.vercel.app/)**
 
 <br>
 
