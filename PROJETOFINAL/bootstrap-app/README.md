@@ -63,7 +63,7 @@ Acesse a versão final do projeto hospedada na Vercel:
 
 ## 🎨 Identidade Visual
 
-![Guia de Cores e Tipografia](./src/img/guia-cores.png)
+![Guia de Cores e Tipografia](./src/img/guia_estilo.png)
 
 O projeto segue um guia de estilo consistente para manter a imersão.
 
