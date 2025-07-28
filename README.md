@@ -117,7 +117,6 @@ Este projeto foi desenvolvido com a Força e a colaboração de:
 * **[Luigi Rodrigo]** 
 * **[Milena Gonçalves]** 
 * **[Maria Eduarda Timiraos]** 
-* **[Sarah Hernandes]**
 
 <br>
 
